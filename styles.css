@@ -1,0 +1,165 @@
+body {
+  background-color: #dbdbdb;
+  color: #000000;
+  transition: 1s;
+  font-family: 'Roboto';
+}
+
+.dark {
+  background-color: #515e7b;
+  color: #ffffff;
+  transition: 1s;
+}
+
+p {
+  font-size: 16px;
+}
+
+.description {
+  text-align: center;
+}
+
+.summary {
+  width: 550px;
+}
+
+img {
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+  object-fit: cover;
+}
+
+.buttons {
+  width: 258px;
+  height: 60px;
+  background-color: #ffd43b;
+  border-color: #183153;
+  border-top-width: 2.5px;
+  border-radius: 10px;
+  box-shadow: #183153 0px 7.5px 0px 0px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.buttons:active {
+  background-color: #fab005;
+  box-shadow: none;
+  transform: translateY(4px);
+  cursor: grabbing;
+}
+
+button:focus {
+  outline: none;
+  cursor: -webkit-grabbing;
+
+}
+
+button:hover {
+  cursor: -webkit-grab;
+  cursor: grab;
+}
+
+.theme-toggle-button {
+  width: 200px;
+  height: 40px;
+  background-color: #ffd43b;
+  border-color: #183153;
+  border-top-width: 2.5px;
+  border-radius: 10px;
+  box-shadow: #183153 0px 7.5px 0px 0px;
+  font-size: 14px;
+}
+
+.theme-toggle-button:active {
+  background-color: #fab005;
+  box-shadow: none;
+  transform: translateY(4px);
+  cursor: grabbing;
+}
+
+
+i {
+  /*color: #ffd43b;*/
+  width: 40px;
+}
+
+.mode {
+  align-items: center;
+  margin-top: 100px;
+}
+
+.sun-moon {
+  --rotation: 0;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 100px;
+  transform: rotate(calc(var(--rotation) * 1deg));
+  transition: transform 1s;
+}
+
+
+.sun,
+.moon {
+  position: absolute;
+  transition-delay: opacity 1s;
+}
+
+.moon {
+  bottom: -115%;
+  opacity: 0;
+  transform: rotate(180deg);
+}
+
+.dark .moon {
+  opacity: 1;
+  color: #ffd43b;
+}
+
+.sun {
+  top: -115%;
+  opacity: 1;
+}
+
+.dark .sun {
+  opacity: 0;
+}
+
+.skills-container {
+  display: flex;
+  height: 100vh;
+}
+
+.skills {
+  margin: auto;
+  max-width: 700px;
+  padding: 20px;
+}
+
+.skills p {
+  margin: 7px 0;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.loading-container {
+  display: flex;
+  height: 100vh;
+}
+
+.loader {
+  margin: auto;
+  max-width: 700px;
+  padding: 20px;
+  text-align: center;
+}
+
+.spinner-color {
+  color: #ffd43b;
+}
+
+.blue-text {
+  color: #183153;
+  font-weight: 500;
+}

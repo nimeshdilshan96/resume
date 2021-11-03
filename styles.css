@@ -182,6 +182,8 @@ i {
 
 .badge-yellow:hover {
   background-color: #93ff3b;
+  cursor: -webkit-grabbing; 
+  cursor: grabbing;
 }
 
 .skill-category-title {

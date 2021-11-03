@@ -180,6 +180,10 @@ i {
   border-color: #183153;
 }
 
+.badge-yellow:hover {
+  background-color: #93ff3b;
+}
+
 .skill-category-title {
 	color: #d5d5d5;
 	text-transform: uppercase;
